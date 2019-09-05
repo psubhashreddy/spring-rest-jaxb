@@ -1,9 +1,16 @@
 # spring-rest-jaxb
 Simple spring boot rest apivwith jaxb and flyway implementation
 
-Its a small spring boot application with a rest end point - /api/v1/person/id/{id}  
+Steps to run the spring boot application
 
-Import the project into any one of IDE and run it as a spring boot application, which creates a datasource in H2 database and inserts some of the records
-as part of flyway script into Person table.
+a.	Unzip the file
 
-Now you can fire the rest end point and get the output as XML using browser or Postman.
+b.	Import it from any of IDE (IntelliJ or Eclipse)
+
+c.	Run the application as Spring Boot Application.
+
+d.	When the server is up – Open http://localhost:8080/h2 to get into the console of h2 database and make sure JDBC Url : ‘jdbc:h2:~/springjaxb’ and then connect with username:sa and no password.
+
+e.	You will see person table created and some of the records inserted into the table already with flyway sql script.
+
+f.	Hit the endpoint http://localhost:8080/api/v1/person/id/{} to see the data in xml format. 
